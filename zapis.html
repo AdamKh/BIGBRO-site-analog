@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BigBro</title>
+        <link href="img/l_logo.png" rel="icon" type="image/x-icon">
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div class="container">
+                <a href="index.html"><img class="logo" src="img/logo.png"></a>
+                <nav class="nav">
+                    <a class="nav-link" href="about.html">О нас</a>
+                    <a class="nav-link" href="uslugi.html">Услуги</a>
+                    <a class="nav-link" href="otzovi.html">Отзывы</a>
+                    <a class="nav-link" href="kontacts.html">Контакты</a>
+                    <a class="nav-link" href="zapis.html">Записаться</a>
+                </nav>
+            </div>
+        </header>
+
+
+        <main>
+            <div class="feedback">
+                <div class="feedback-container">
+                    <h2>
+                        Вы сделали <font color="#FFB700">правильный выбор!</font>
+                    </h2>
+                    <p><b>Введите данные для записи</b></p>
+                    <form name="feedback" action="#" onsubmit="return false;">
+                        <br>
+                        <div class="feedback-gr">
+                            <p class="name" required>Имя и фамилия:</p>
+                            <input class="input" id="name" type="name" required>
+                            <p class="number" required>Номер для связи:</p>
+                            <input class="input" id="number" type="number" required>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="feedback-gr">
+                            <p class="score">Город</p>
+                            <select id="city" size="1">
+                                <option selected value="Ставрополь">Ставрополь</option>
+                                <option value="Moskow">Москва</option>
+                                <option value="Saint-Peterburg">Санкт-Петербург</option>
+                                <option value="Rostov">Ростов на Дону</option>
+                                <option value="Magas">Магас</option>
+                            </select>
+                            <p class="score">Услуга</p>
+                            <select id="haircut" size="1">
+                                <option selected value="мужскую стрижку головы">Муж. стрижка</option>
+                                <option value="детскую стрижку">Дет. стрижка</option>
+                                <option value="окантовку или стрижку бороды">Окантовка/стрижка бороды</option>
+                                <option value="мужскую стрижку головы и бороды">Муж. стрижка + бороды</option>
+                            </select>
+                            <p class="score">Барбер</p>
+                            <select id="barber" size="1">
+                                <option selected value="Артем">Артем</option>
+                                <option value="Давудик">Давудик</option>
+                                <option value="Максим">Максим</option>
+                                <option value="Андрий">Андрий</option>
+                                <option value="Олег">Олег</option>
+                            </select>
+                        </div>
+                        <br>
+                        <br>
+                        <p class="com">Дополнительные пожелания (предупреждения)</p>
+                        <textarea class="comment" id="comment" placeholder="Хочу ирокез..." name="comment" rows=6 cols=23></textarea>
+                        <br>
+                        <br>
+                        <button class="send" onclick="send()"><b>Записаться</b></button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+        <footer>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/logo.png">
+                </div>
+                <div class="footer-social">
+                    <p class="footer-podpis">Мы в соц. сетях</p>
+                    <a class="soc" href="#">
+                        <img src="img/social/Instagram.svg" alt="Instagram">
+                    </a>
+                    <a class="soc" href="#">
+                        <img src="img/social/Dribbble.svg" alt="Dribbble">
+                    </a>
+                    <a class="soc" href="#">
+                        <img src="img/social/Twitter.svg" alt="Twitter">
+                    </a>
+                    <a class="soc" href="#">
+                        <img src="img/social/Youtube.svg" alt="Youtube">
+                    </a>
+                </div>
+                
+                <div class="app">
+                    <p class="footer-podpis">Скачать мобильное приложение</p>
+                    <a href="#"><img src="img/app/appstore.png"></a>
+                    <a href="#"><img src="img/app/googleplay.png"></a>
+                </div>
+                <div class="footer-copyrite">
+                    <p>© 2022 BigBro. Все права защищены</p>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+    <script src="js/zapis.js"></script>
+</html>
